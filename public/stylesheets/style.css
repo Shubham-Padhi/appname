@@ -1,0 +1,92 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+:root {
+    --main-bg: #0fb7bd;
+    --secondary-bg: rgb(252, 252, 252);
+    --txt-secondary: #f7f7f7;
+    --txt-primary: #222222;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: blue;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--secondary-bg);
+    color: var(--txt-primary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 15px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: var(--icons-bg-primary);
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.btn {
+    margin-top: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--icons-bg-primary);
+    color: var(--txt-secondary);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+ 
+    -o-transition: .3s ease-in-out;
+}
